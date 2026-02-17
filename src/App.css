@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Tapestry&display=swap');
 @import "tailwindcss";
 
 #root {
   width: 100%;
   height: 100%;
+  font-family: "Bungee", sans-serif;
+
 }
 
 @theme {
