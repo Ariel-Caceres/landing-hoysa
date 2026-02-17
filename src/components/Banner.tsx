@@ -1,10 +1,12 @@
 export const Banner = () => {
     return (
-        <div className="w-full flex justify-center bg-marron-oscuro text-white text-xl mt-5">
-            <div className="  items-center flex justify-between w-[90%]">
-                <span className="flex gap-2 items-center"><i className="fa-solid fa-truck-arrow-right "></i>Envíos gratis</span>
-                <span>Envíos gratis por la zona barrio La Escondida</span>
-                <span className="flex gap-2 items-center"><i className="fa-solid fa-truck-arrow-right"></i>Envíos Gratis</span>
+        <div className="w-full  justify-center  text-white text-sm flex pt-5 ">
+            <div className=" items-center flex justify-between w-[95%] bg-marron-oscuro p-2 rounded-2xl">
+                <span className=" gap-2 items-center md:flex hidden w-[20%]"><i className="fa-solid fa-truck-arrow-right "></i>Envíos gratis</span>
+                <div className="flex justify-center xl:w-[60%] w-full">
+                    <span className="text-md text-center xl:text-xl">Envíos gratis por la zona barrio La Escondida</span>
+                </div>
+                <span className=" gap-2 items-center md:flex hidden  w-[20%]"><i className="fa-solid fa-truck-arrow-right"></i>Envíos Gratis</span>
             </div>
         </div>
     )
