@@ -1,34 +1,35 @@
 import type { Product } from "../types/product.entity"
 
 export const products: Product[] = [{
-    id: 1,
-    nombre: "Pollo-trozado",
-    precio: 3400,
-    oferta: false,
-    img: "images/pollo-trozado.webp",
-    stock: "disponible"
-
-}, {
     id: 2,
-    nombre: "Carne-picada",
+    nombre: "carne-picada",
     precio: 3000,
     oferta: "2kg 5000",
     img: "images/carne-picada.webp",
-    stock: "disponible"
+    stock: "agotado"
 
 },
 {
     id: 3,
-    nombre: "Chupachups",
+    nombre: "chupachups",
     precio: 300,
     oferta: "8 x 2000",
     img: "images/chupachups.jpg",
+    stock: "agotado"
+
+},
+{
+    id: 1,
+    nombre: "pollo-trozado",
+    precio: 3400,
+    oferta: false,
+    img: "images/pollo-trozado.jpg",
     stock: "disponible"
 
 },
 {
     id: 4,
-    nombre: "Pollo-entero",
+    nombre: "pollo-entero",
     precio: 3800,
     oferta: false,
     img: "images/Pollo-entero.jpg",
