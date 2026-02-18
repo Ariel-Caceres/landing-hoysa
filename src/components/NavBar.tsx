@@ -19,6 +19,9 @@ export const NavBar = () => {
                         <li className="hover:cursor-pointer hover:text-rojo">
                             <span>Sabores</span>
                         </li>
+                        <li className="hover:cursor-pointer hover:text-rojo">
+                            <span>Productos</span>
+                        </li>
                     </ul>
                 </div>
 
