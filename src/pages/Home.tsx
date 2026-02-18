@@ -4,7 +4,7 @@ import { NavBar } from "../components/NavBar"
 
 export const Home = () => {
     return (
-        <div>
+        <div className="flex justify-center items-center flex-col">
             <Banner />
             <NavBar />
             <MainProduct />
