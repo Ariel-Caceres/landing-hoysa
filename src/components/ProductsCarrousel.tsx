@@ -24,18 +24,22 @@ export const ProductsCarrousel = () => {
 
 
             <div className="w-full justify-center flex ">
-                <div className="flex w-[95%] xl:w-[80%] justify-between xl:w[90%] gap-6 overflow-scroll scroll-auto">
+                <div className="flex w-[95%] xl:w-[80%] justify-between xl:w[90%] z-0 gap-6  ">
                     {products.map((p, i) =>
-                        <div className="w-[20%] xl:min-w-[30%] flex flex-col bg-marron-claro overflow-hidden gap-5 p-3 rounded-2xl" key={i}>
+                        <div className="min-w-[40%] md:min-w-[20%] flex flex-col z-20  bg-blanco border shadow-2xl hover:-translate-y-1 transition-all ease-in-out duration-150 cursor-pointer hover:shadow-black overflow-hidden gap-5 p-3 rounded-2xl" key={i}>
                             <div className="text-center py-2">
                                 <span>{p.nombre}</span>
                             </div>
-                            <div className="rounded-[50%] overflow-hidden  w-full">
-                                <img src={p.img} alt="" className="w-full h-full" />
+                            <div className="rounded-[40%] overflow-hidden object-cover object-[center_10%] w-full">
+                                <img src={p.img} alt="" className="w-[300px] h-[250px]" />
                             </div>
                             <div>
                                 <span>Precio:  </span>
                                 <span> ${p.precio}</span>
+                            </div>
+                            <div>
+                                <span>stock:</span>
+                                <span> {p.stock}</span>
                             </div>
                         </div>
 
