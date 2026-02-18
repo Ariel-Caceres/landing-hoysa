@@ -36,7 +36,7 @@ export const ProductsCarrousel = () => {
 
 
             <div className="w-full justify-center flex ">
-                <div className="flex w-[95%] xl:w-[80%] justify-between xl:w[90%] overflow-hidden  z-0 gap-6  ">
+                <div className="flex w-[95%] xl:w-[80%] justify-between xl:w[90%] overflow-scroll overflow-y-hidden  z-0 gap-6  ">
                     {products.map((p, i) =>
                         <div className="  flex flex-col md:w-[30%] w-[50%] shrink-0 sm:w-[30%] z-20 justify-between bg-blanco border shadow-2xl hover:-translate-y-1 transition-all ease-in-out duration-150 cursor-pointer hover:shadow-black overflow-hidden gap-5 p-3 rounded-2xl" key={i}>
                             <div className="text-center py-2">
