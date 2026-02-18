@@ -1,9 +1,16 @@
 export const MainProduct = () => {
     return (
-        <div className="w-full flex justify-center items-center flex-col">
-            <div className="w-[85%] h-[50vh] flex ">
-                <img src="public/cpc-banner-2.png" alt="" className="w-full h-full" />
+
+        <div className="w-full flex justify-center pb-5">
+            <div className="w-[95%] xl:w-[80%]">
+                <img
+                    src="/cpc-banner-3.png"
+                    alt="Main banner"
+                    className="w-full sm:h-50 h-37.5  md:h-100  object-top object-cover rounded-3xl"
+                />
             </div>
         </div>
+
+
     )
 }
