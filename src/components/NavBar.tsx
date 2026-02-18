@@ -9,10 +9,9 @@ export const NavBar = () => {
                         <img src="images/logo-removebg.png" alt="" className="w-full" />
                     </div>
 
-                    <ul className="xl:text-[15px] md:text-[13px] xl:w-[45%]  md:w-[70%]  flex justify-evenly p-3 text-[12px] xl:text-md w-full  xl:gap-4">
+                    <ul className="xl:text-[15px] md:text-[13px] xl:w-[45%]  md:w-[70%]  hidden md:flex justify-evenly p-3 text-[12px] xl:text-md w-full  xl:gap-4">
                         <li className="hover:cursor-pointer text-center hover:text-rojo w-1/5 ">
                             <a href="https://wa.me/541171416222" target="_blank" className="animate-pulse" id="wsp">
-
                                 <span>Contacto</span>
                             </a>
                         </li>
