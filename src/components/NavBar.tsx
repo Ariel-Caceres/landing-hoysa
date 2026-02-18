@@ -6,7 +6,7 @@ export const NavBar = () => {
                 <div className="flex items-center  md:w-[80%] xl:gap-8 flex-wrap wrap-normal xl:justify-start  justify-between w-full ">
 
                     <div className="w-[30%] xl:w-[15%]  rounded-2xl overflow-hidden  ">
-                        <img src="public/logo-removebg.png" alt="" className="w-full" />
+                        <img src="images/logo-removebg.png" alt="" className="w-full" />
                     </div>
 
                     <ul className="xl:text-[15px] md:text-[13px] xl:w-[45%]  md:w-[70%]  flex justify-evenly p-3 text-[12px] xl:text-md w-full  xl:gap-4">
