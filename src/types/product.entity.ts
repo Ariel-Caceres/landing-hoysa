@@ -1,0 +1,7 @@
+export interface Product {
+    nombre: string,
+    id: number,
+    precio: number,
+    oferta: string | false,
+    img: string
+}
