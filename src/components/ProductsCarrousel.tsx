@@ -47,7 +47,7 @@ export const ProductsCarrousel = () => {
             <div className="w-full justify-center flex ">
                 <div ref={carouselRef} className="snap-x snap-mandatory  flex w-[95%] xl:w-[80%] justify-between xl:w[90%] overflow-x-auto overflow-y-hidden  z-0 gap-6  ">
                     {products.map((p, i) =>
-                        <div className="relative  flex flex-col md:w-[25%] w-[70%] shrink-0 sm:w-[30%] z-20 justify-between bg-blanco border shadow-2xl hover:bg-white hover:border-gray-400 active:bg-white active:border-gray-400 transition-all ease-in-out duration-150 cursor-pointer hover:shadow-black overflow-hidden gap-3 p-3 rounded-2xl" key={i}>
+                        <div className="relative  flex flex-col md:w-[25%] w-[70%] shrink-0 sm:w-[30%] z-20 justify-between bg-blanco border shadow-2xl hover:bg-white hover:border-gray-400 active:bg-white active:border-gray-400 transition-all active:scale-95 ease-in-out duration-150 cursor-pointer hover:shadow-black overflow-hidden gap-3 p-3 rounded-2xl" key={i}>
                             <div className="text-center py-2 text-xl">
                                 <span>{normalizador[p.nombre]}</span>
                             </div>
