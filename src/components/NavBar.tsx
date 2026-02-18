@@ -11,7 +11,10 @@ export const NavBar = () => {
 
                     <ul className="xl:text-[15px] md:text-[13px] xl:w-[45%]  md:w-[70%]  flex justify-evenly p-3 text-[12px] xl:text-md w-full  xl:gap-4">
                         <li className="hover:cursor-pointer text-center hover:text-rojo w-1/5 ">
-                            <span>Contacto</span>
+                            <a href="https://wa.me/541171416222" target="_blank" className="animate-pulse" id="wsp">
+
+                                <span>Contacto</span>
+                            </a>
                         </li>
                         <li className="hover:cursor-pointer text-center hover:text-rojo min-w-36">
                             <span>Sobre Nosotros</span>
