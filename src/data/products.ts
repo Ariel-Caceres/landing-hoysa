@@ -5,14 +5,17 @@ export const products: Product[] = [{
     nombre: "Pollo-trozado",
     precio: 3400,
     oferta: false,
-    img: "chupachups.jpg"
+    img: "  pollo-trozado.webp",
+    stock: "disponible"
 
 }, {
     id: 2,
     nombre: "Carne-picada",
     precio: 3000,
     oferta: "2kg 5000",
-    img: "chupachups.jpg"
+    img: "carne-picada.webp",
+    stock: "disponible"
+
 
 },
 {
@@ -20,14 +23,18 @@ export const products: Product[] = [{
     nombre: "Chupachups",
     precio: 300,
     oferta: "8 x 2000",
-    img: "chupachups.jpg"
+    img: "chupachups.jpg",
+    stock: "disponible"
+
 },
 {
     id: 4,
     nombre: "Pollo-entero",
     precio: 3800,
     oferta: false,
-    img: "chupachups.jpg"
+    img: "Pollo-entero.jpg",
+    stock: "disponible"
+
 
 }
 ]

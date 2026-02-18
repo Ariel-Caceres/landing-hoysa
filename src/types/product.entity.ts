@@ -3,5 +3,6 @@ export interface Product {
     id: number,
     precio: number,
     oferta: string | false,
-    img: string
+    img: string,
+    stock: string
 }
