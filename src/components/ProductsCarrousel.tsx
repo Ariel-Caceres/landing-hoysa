@@ -55,13 +55,13 @@ export const ProductsCarrousel = () => {
                                 <img src={p.img} alt="" className="w-[200px] h-[200px] rounded-2xl" />
                             </div>
                             <div>
-                                <span>Precio:  </span>
-                                <span className="p-2 bg-blue-500 text-md text-white rounded-2xl"> ${p.precio}</span>
-                            </div>
-                            <div>
                                 <span>stock:</span>
 
                                 <span className={p.stock == "disponible" ? "text-azul" : "text-rojo"}> {p.stock}</span>
+                            </div>
+                            <div>
+                                <span>Precio:  </span>
+                                <span className="p-2 bg-blue-500 text-md text-white rounded-2xl"> ${p.precio}</span>
                             </div>
 
                             {p.oferta !== false &&
