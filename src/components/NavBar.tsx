@@ -12,11 +12,11 @@ export const NavBar = () => {
                         <img src="images/logo-removebg.png" alt="" className="w-full" />
                     </div>
 
-                    <ul className={`shadow-black fixed w-64 md:static top-0 right-0 lg:text-md md:h-auto  lg:w-[50%]  md:w-[70%] xl:w-[55%] bg-blanco h-full md:bg-transparent md:border-none border-l rounded-l-3xl  flex flex-col md:flex-row gap-6 md:gap-0 xl:gap-4 p-6 md:p-3 shadow-xl md:shadow-none text-[16px] md:text-[13px] xl:text-[15px] justify-start md:justify-evenly transform transition-transform duration-300 ${showNavbar ? "translate-x-0" : "translate-x-[110%]"} md:translate-x-0 z-20`}>
+                    <ul className={` shadow-black fixed w-64 md:static  top-0 right-0 lg:text-md md:h-auto  lg:w-[50%]  md:w-[70%] xl:w-[55%] bg-blanco h-full md:bg-transparent md:border-none border-l rounded-l-3xl  flex flex-col md:flex-row gap-6 md:gap-0 xl:gap-4 p-6 md:p-3 shadow-xl md:shadow-none text-[16px] md:text-[13px] xl:text-[15px] justify-start md:justify-evenly transform transition-transform duration-300 ${showNavbar ? "translate-x-0" : "translate-x-[110%]"} md:translate-x-0 z-20`}>
                         {showNavbar &&
                             <div className="md:hidden">
                                 <div className="w-full flex justify-center border-b border-gray-400 ">
-                                    <img src="images/favicon.png" alt="" className="w-[50%] " />
+                                    <img src="images/favicon.png" alt="" className="w-[60%] " />
                                 </div>
                                 <div className="absolute top-5 right-5 text-3xl active:rotate-45 transition-all ease-in-out duration-200 active:scale-75 cursor-pointer" onClick={() => setShowNavBar(false)}>
                                     <i className="fa-solid fa-xmark"></i>
@@ -38,6 +38,8 @@ export const NavBar = () => {
                         <li className="hover:cursor-pointer text-center hover:text-rojo w-1/4">
                             <span>Productos</span>
                         </li>
+                        <div className="block border-b border-b-gray-400">
+                        </div>
                     </ul>
 
                     <div className="text-3xl flex md:hidden cursor-pointer active:scale-50 transition-all ease-in-out duration-150 " onClick={() => setShowNavBar(true)}>
