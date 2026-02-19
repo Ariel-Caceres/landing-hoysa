@@ -7,7 +7,7 @@ function App() {
 
 
     return (
-        <div className="bg-blanco xl:h-auto h-screen">
+        <div className="bg-blanco xl:h-auto min-h-screen">
 
             <Router >
                 <Routes >
