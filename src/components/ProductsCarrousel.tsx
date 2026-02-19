@@ -47,10 +47,9 @@ export const ProductsCarrousel = () => {
             <div className="w-full justify-center flex ">
                 <div ref={carouselRef} className="snap-x snap-mandatory  flex w-[95%] xl:w-[80%] justify-between xl:w[90%] overflow-x-auto overflow-y-hidden  gap-6  ">
                     {products.map((p, i) =>
-                        <div className="
-relative flex flex-col w-[65%] sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[20%] shrink-0 bg-blanco border shadow-lg active:scale-95 transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4"
+                        <div className="relative flex flex-col w-[65%] sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[20%] shrink-0 bg-blanco border shadow-lg active:scale-95 active:bg-white active:border-gray-400  transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4"
                             key={i}>
-                            <div className="text-center py-2 text-xl">
+                            <div className="text-center py-2  xl:text-xl lg:text-lg md:text-md">
                                 <span>{normalizador[p.nombre]}</span>
                             </div>
                             <div className=" overflow-hidden object-cover object-[center_10%] justify-center flex w-full">
@@ -59,7 +58,7 @@ relative flex flex-col w-[65%] sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[20%] shrin
                             <div>
                                 <span>stock:</span>
 
-                                <span className={p.stock == "disponible" ? "text-azul" : "text-rojo"}> {p.stock}</span>
+                                <span className={p.stock == "disponible" ? "text-green-600" : "text-rojo"}> {p.stock}</span>
                             </div>
                             <div>
                                 <span>Precio:  </span>
