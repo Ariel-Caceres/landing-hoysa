@@ -48,30 +48,13 @@ export const ProductsCarrousel = () => {
                 <div ref={carouselRef} className="snap-x snap-mandatory  flex w-[95%] xl:w-[80%] justify-between xl:w[90%] overflow-x-auto overflow-y-hidden  gap-6  ">
                     {products.map((p, i) =>
                         <div className="
-relative
-flex flex-col
-w-[65%]
-sm:w-[45%]
-md:w-[30%]
-lg:w-[25%]
-xl:w-[20%]
-shrink-0
-bg-blanco
-border
-shadow-lg
-active:scale-95
-transition-all duration-200
-rounded-2xl
-overflow-hidden
-gap-4
-p-4
-"
+relative flex flex-col w-[65%] sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[20%] shrink-0 bg-blanco border shadow-lg active:scale-95 transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4"
                             key={i}>
                             <div className="text-center py-2 text-xl">
                                 <span>{normalizador[p.nombre]}</span>
                             </div>
                             <div className=" overflow-hidden object-cover object-[center_10%] justify-center flex w-full">
-                                <img src={p.img} alt="" className="w-[200px] h-[200px] rounded-2xl" />
+                                <img src={p.img} alt="" className="w-50 h-50 rounded-2xl" />
                             </div>
                             <div>
                                 <span>stock:</span>
