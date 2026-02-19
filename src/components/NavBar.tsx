@@ -12,13 +12,13 @@ export const NavBar = () => {
                         <img src="images/logo-removebg.png" alt="" className="w-full" />
                     </div>
 
-                    <ul className={`shadow-black fixed w-64 md:static top-0 right-0  md:h-auto  md:w-[70%] xl:w-[45%] bg-blanco h-full md:bg-transparent md:border-none border-l rounded-l-3xl  flex flex-col md:flex-row gap-6 md:gap-0 xl:gap-4 p-6 md:p-3 shadow-xl md:shadow-none text-[16px] md:text-[13px] xl:text-[15px] justify-start md:justify-evenly transform transition-transform duration-300 ${showNavbar ? "translate-x-0" : "translate-x-[110%]"} md:translate-x-0 z-20`}>
+                    <ul className={`shadow-black fixed w-64 md:static top-0 right-0   md:h-auto  md:w-[70%] xl:w-[45%] bg-blanco h-full md:bg-transparent md:border-none border-l rounded-l-3xl  flex flex-col md:flex-row gap-6 md:gap-0 xl:gap-4 p-6 md:p-3 shadow-xl md:shadow-none text-[16px] md:text-[13px] xl:text-[15px] justify-start md:justify-evenly transform transition-transform duration-300 ${showNavbar ? "translate-x-0" : "translate-x-[110%]"} md:translate-x-0 z-20`}>
                         {showNavbar &&
                             <>
                                 <div className="w-full flex justify-center border-b border-gray-400">
                                     <img src="images/favicon.png" alt="" className="w-[50%] " />
                                 </div>
-                                <div className="absolute top-5 right-5 text-2xl" onClick={() => setShowNavBar(false)}>
+                                <div className="absolute top-5 right-5 text-2xl active:rotate-45 transition-all ease-in-out duration-200 active:scale-75" onClick={() => setShowNavBar(false)}>
                                     <i className="fa-solid fa-xmark"></i>
                                 </div>
 
@@ -40,7 +40,7 @@ export const NavBar = () => {
                         </li>
                     </ul>
 
-                    <div className="text-2xl flex md:hidden cursor-pointer" onClick={() => setShowNavBar(true)}>
+                    <div className="text-2xl flex md:hidden cursor-pointer active:scale-50 transition-all ease-in-out duration-150" onClick={() => setShowNavBar(true)}>
                         <i className="fa-solid fa-bars"></i>
                     </div>
                 </div>
