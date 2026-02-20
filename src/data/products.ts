@@ -8,7 +8,7 @@ export const products: Product[] = [{
     img: "images/carne-picada.webp",
     stock: "agotado",
     venta: "kilo",
-    tipo: "carne"
+    tipo: "pollo"
 },
 {
     id: 3,
@@ -18,7 +18,7 @@ export const products: Product[] = [{
     img: "images/chupachups.jpg",
     stock: "Disponible",
     venta: "unidad",
-    tipo: "helado"
+    tipo: "chupachups"
 },
 {
     id: 1,
@@ -28,7 +28,7 @@ export const products: Product[] = [{
     img: "images/pollo-trozado.jpg",
     stock: "disponible",
     venta: "kilo",
-    tipo: "carne"
+    tipo: "pollo"
 },
 {
     id: 4,
@@ -38,16 +38,67 @@ export const products: Product[] = [{
     img: "images/Pollo-entero.jpg",
     stock: "disponible",
     venta: "kilo",
-    tipo: "carne"
+    tipo: "pollo"
 },
 {
     id: 4,
     nombre: "huevo",
     precio: 5000,
     oferta: "Dos maples x 9000",
-    img: "public/images/maple-huevo.webp",
+    img: "images/maple-huevo.webp",
     stock: "disponible",
     venta: "maple",
     tipo: "granja"
+},
+{
+    id: 4,
+    nombre: "zanahoria",
+    precio: 1000,
+    oferta: false,
+    img: "images/zanahoria.jpg",
+    stock: "disponible",
+    venta: "kilo",
+    tipo: "granja"
+},
+{
+    id: 4,
+    nombre: "papa",
+    precio: 900,
+    oferta: false,
+    img: "images/papa.jpg",
+    stock: "disponible",
+    venta: "kilo",
+    tipo: "granja"
+},
+{
+    id: 4,
+    nombre: "pata-y-muslo",
+    precio: 3400,
+    oferta: false,
+    img: "images/Pata-muslo.jpg",
+    stock: "agotado",
+    venta: "kilo",
+    tipo: "pollo"
+},
+{
+    id: 4,
+    nombre: "pechuga",
+    precio: 3800,
+    oferta: false,
+    img: "images/pechuga.jpg",
+    stock: "agotado",
+    venta: "kilo",
+    tipo: "pollo"
+},
+{
+    id: 4,
+    nombre: "cebolla",
+    precio: 800,
+    oferta: "Dos kilos 1500",
+    img: "images/cebolla.jpg",
+    stock: "disponible",
+    venta: "kilo",
+    tipo: "granja"
 }
+
 ]
