@@ -6,7 +6,7 @@ export const products: Product[] = [{
     precio: 3000,
     oferta: "2kg 5000",
     img: "images/carne-picada.webp",
-    stock: "agotado",
+    stock: "disponible",
     venta: "kilo",
     tipo: "pollo"
 },
