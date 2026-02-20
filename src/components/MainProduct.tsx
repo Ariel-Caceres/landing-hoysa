@@ -1,7 +1,7 @@
 export const MainProduct = () => {
     return (
 
-        <div className="w-full flex justify-center ">
+        <div className="w-full flex justify-center pb-4">
             <div className="w-[95%] xl:w-[80%] ">
                 <img
                     src="images/cpc-banner-chopp.png"
