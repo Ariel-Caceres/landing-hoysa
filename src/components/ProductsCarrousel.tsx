@@ -3,7 +3,7 @@ import { products } from "../data/products"
 import { useRef, useState } from "react";
 import type { Product } from "../types/product.entity";
 
-export const ProductsCarrousel = ({ product }: { product: string }) => {
+export const ProductsCarrousel = ({ product, color }: { product: string, color: string }) => {
     const carouselRef = useRef<HTMLDivElement>(null);
     const [showProducts] = useState<Product[]>(products.filter(p => p.tipo == product))
     showProducts.sort((a, b) => {
@@ -49,8 +49,8 @@ export const ProductsCarrousel = ({ product }: { product: string }) => {
 
     return (
         <div className="w-full justify-center items-center flex flex-col">
-            <div className=" flex md:w-[70%]  w-[90%] justify-between py-6 items-center">
-                <div className="text-xl sm:text-3xl w-[50%]">
+            <div className=" flex md:w-[70%]  w-[90%] justify-between py-6 items-center ">
+                <div className="text-xl sm:text-3xl w-[50%] shadow-top-sm ">
                     <span>{product} {product == "pollo" ? "🐔" : product == "granja" ? "🥚🍅" : ""}</span>
                 </div>
                 {/* <div className="border-b-2 border-gray-300 block w-full">
@@ -68,9 +68,9 @@ export const ProductsCarrousel = ({ product }: { product: string }) => {
 
 
             <div className={`w-full justify-center flex `} >
-                <div ref={carouselRef} className={`  gap-6 snap-x snap-mandatory  flex w-[95%] xl:w-[80%] justify-between xl:w[90%] overflow-x-auto overflow-y-hidden    `}>
+                <div ref={carouselRef} className={`p-3 ${color == "rojo" ? "bg-[rgba(246,231,209,1)]" : "bg-[rgba(234,234,218,1)]"} rounded-lg gap-6 snap-x snap-mandatory  flex w-[95%] xl:w-[80%] justify-between  overflow-x-auto overflow-y-hidden    `}>
                     {showProducts.map((p, i) =>
-                        <div className={`${showProducts.length < 3 ? "w-[70%] sm:w-[50%] md:w-[40%] xl:w-[30%]" : "w-[75%] sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[20%]"} relative hover:shadow-2xl hover:shadow-black flex flex-col   shrink-0 hover:bg-white bg-blanco border shadow-lg active:scale-95 active:bg-white active:border-gray-400  transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4`}
+                        <div className={`shadow-[inset_0_-20px_30px_rgba(0,0,0,0.1),inset_0_20px_30px_rgba(241,238,219,1)]  w-[75%] sm:w-[45%] md:w-[30%] lg:w-[30%] xl:w-[25%]  relative hover:shadow-lg hover:shadow-black flex flex-col   shrink-0 hover:bg-white bg-blanco border  active:scale-95 active:bg-white active:border-gray-400  transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4`}
                             key={i}>
                             <div className="text-center py-2  xl:text-xl lg:text-lg md:text-md">
                                 <span>{normalizer[p.nombre]}</span>
