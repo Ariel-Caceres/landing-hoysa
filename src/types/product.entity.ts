@@ -4,5 +4,7 @@ export interface Product {
     precio: number,
     oferta: string | false,
     img: string,
-    stock: string
+    stock: string,
+    venta: string,
+    tipo: string
 }
