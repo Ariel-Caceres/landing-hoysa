@@ -70,7 +70,7 @@ export const ProductsCarrousel = ({ product }: { product: string }) => {
             <div className={`w-full justify-center flex `} >
                 <div ref={carouselRef} className={`  gap-6 snap-x snap-mandatory  flex w-[95%] xl:w-[80%] justify-between xl:w[90%] overflow-x-auto overflow-y-hidden    `}>
                     {showProducts.map((p, i) =>
-                        <div className={`${showProducts.length < 3 ? "w-[50%] sm:w-[50%] md:w-[40%] xl:w-[30%]" : "w-[65%] sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[20%]"} relative hover:shadow-2xl hover:shadow-black flex flex-col   shrink-0 hover:bg-white bg-blanco border shadow-lg active:scale-95 active:bg-white active:border-gray-400  transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4`}
+                        <div className={`${showProducts.length < 3 ? "w-[70%] sm:w-[50%] md:w-[40%] xl:w-[30%]" : "w-[75%] sm:w-[45%] md:w-[30%] lg:w-[25%] xl:w-[20%]"} relative hover:shadow-2xl hover:shadow-black flex flex-col   shrink-0 hover:bg-white bg-blanco border shadow-lg active:scale-95 active:bg-white active:border-gray-400  transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4`}
                             key={i}>
                             <div className="text-center py-2  xl:text-xl lg:text-lg md:text-md">
                                 <span>{normalizer[p.nombre]}</span>
