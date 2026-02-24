@@ -58,7 +58,7 @@ export const products: Product[] = [{
     img: "images/zanahoria.jpg",
     stock: "disponible",
     venta: "kilo",
-    tipo: "granja"
+    tipo: "verdura"
 },
 {
     id: 4,
@@ -68,7 +68,7 @@ export const products: Product[] = [{
     img: "images/papa.jpg",
     stock: "disponible",
     venta: "kilo",
-    tipo: "granja"
+    tipo: "verdura"
 },
 {
     id: 4,
@@ -98,7 +98,7 @@ export const products: Product[] = [{
     img: "images/cebolla.jpg",
     stock: "disponible",
     venta: "kilo",
-    tipo: "granja"
+    tipo: "verdura"
 }
 
 ]
