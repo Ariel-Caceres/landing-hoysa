@@ -5,11 +5,11 @@ export const Footer = () => {
             <div className="max-w-6xl mx-auto px-6 py-5 grid md:grid-cols-3 gap-5 font-light">
 
                 {/* Logo + Descripción */}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 justify-center items-center">
                     <img
                         src="/images/favicon.png"
                         alt="Logo Pollería"
-                        className="w-24"
+                        className="xl:w-96 lg:w-80 md:w-72 w-60 "
                     />
 
                 </div>
@@ -18,7 +18,8 @@ export const Footer = () => {
                 <div className="flex flex-col gap-3 text-sm">
                     <h3 className="font-semibold text-lg">Contacto</h3>
                     <p>📍 La Escondida, Pilar, Buenos Aires</p>
-                    <p>📞 11 7141 6222</p>
+                    <p>📞 11-7141-6222</p>
+                    <p>📞  11-6136-5411</p>
                     <p>🕒 Lunes a Domingos hasta las 21:00</p>
                 </div>
 
