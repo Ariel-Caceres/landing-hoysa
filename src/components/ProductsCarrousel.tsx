@@ -5,7 +5,17 @@ import type { Product } from "../types/product.entity";
 
 export const ProductsCarrousel = ({ product, color }: { product: string, color: string }) => {
     const carouselRef = useRef<HTMLDivElement>(null);
-    const [showProducts] = useState<Product[]>(products.filter(p => p.tipo == product))
+    const [showProducts] = useState<Product[]>(
+        products.filter(p => {
+            if (product === "granja") {
+                return p.tipo === "granja" || p.tipo === "verdura"
+            }
+
+            return p.tipo === product
+        })
+    )
+
+
     showProducts.sort((a, b) => {
         const aHasOfer = Boolean(a.oferta)
         const bHasOfer = Boolean(b.oferta)
@@ -70,7 +80,10 @@ export const ProductsCarrousel = ({ product, color }: { product: string, color: 
             <div className={`w-full justify-center flex `} >
                 <div ref={carouselRef} className={`p-3 ${color == "rojo" ? "bg-[rgba(246,231,209,1)]" : "bg-[rgba(234,234,218,1)]"} rounded-lg gap-6 snap-x snap-mandatory  flex w-[95%] xl:w-[80%] justify-between  overflow-x-auto overflow-y-hidden    `}>
                     {showProducts.map((p, i) =>
-                        <div className={`shadow-[inset_0_-20px_30px_rgba(0,0,0,0.1),inset_0_20px_30px_rgba(241,238,219,1)]  w-[75%] sm:w-[45%] md:w-[30%] lg:w-[30%] xl:w-[25%]  relative hover:shadow-lg hover:shadow-black flex flex-col   shrink-0 hover:bg-white bg-blanco border  active:scale-95 active:bg-white active:border-gray-400  transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4`}
+                        <div className={`shadow-[inset_0_-20px_30px_rgba(0,0,0,0.1),inset_0_20px_30px_rgba(241,238,219,1)] 
+                             w-[75%] sm:w-[45%] md:w-[30%] lg:w-[30%] xl:w-[25%]  relative hover:shadow-lg hover:shadow-black
+                              flex flex-col   shrink-0 hover:bg-white bg-blanco border border-gray-300  active:scale-95 active:bg-white
+                               active:border-gray-400  transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4`}
                             key={i}>
                             <div className="text-center py-2  xl:text-xl lg:text-lg md:text-md">
                                 <span>{normalizer[p.nombre]}</span>
