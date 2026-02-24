@@ -1,6 +1,7 @@
 import { useState } from "react"
-
+import { useNavigate } from "react-router-dom"
 export const NavBar = () => {
+    const navigate = useNavigate()
     const [showNavbar, setShowNavBar] = useState<boolean>(false)
 
     return (
@@ -24,10 +25,8 @@ export const NavBar = () => {
 
                             </div>
                         }
-                        <li className="hover:cursor-pointer text-center hover:text-rojo w-1/5 ">
-                            <a href="https://wa.me/541171416222" target="_blank" className="animate-pulse" id="wsp">
-                                <span>Contacto</span>
-                            </a>
+                        <li className="hover:cursor-pointer text-center hover:text-rojo w-1/5 " onClick={() => navigate("/contact")}>
+                            <span>Contacto</span>
                         </li>
                         <li className="hover:cursor-pointer text-center hover:text-rojo min-w-36  md:block flex ">
                             <span>Sobre Nosotros</span>
