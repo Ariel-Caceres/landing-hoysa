@@ -12,7 +12,7 @@ export const Contact = () => {
             <div className=" flex justify-center  w-full">
                 <span className="sm:text-3xl text-2xl">Contactanos</span >
             </div>
-            <div className=" flex justify-center w-full sm:text-2xl text-md mt-4 ">
+            <div className=" flex justify-center w-full sm:text-2xl text-md text-center mt-4 ">
                 <p>Estamos disponibles para tomar tu pedido </p>
             </div>
             <div className=" mt-10 flex justify-center   w-[90%] flex-wrap md:gap-2 gap-5">
