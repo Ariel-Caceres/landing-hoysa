@@ -11,6 +11,8 @@
 @theme {
   /* Paleta personalizada */
   --color-blanco: #F8F2DC;
+  --color-blancoOscuro: #F6E8D2;
+  --color-blancoClaro: #EAEADA;
   --color-rojo: #CD4631;
   --color-azul: #81ADC8;
   --color-marron-claro: #DEA47E;
