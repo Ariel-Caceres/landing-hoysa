@@ -25,6 +25,9 @@ export const NavBar = () => {
                         <div className="absolute md:hidden top-5 right-5 text-3xl active:rotate-45 transition-all ease-in-out duration-200 active:scale-75 cursor-pointer" onClick={() => setShowNavBar(false)}>
                             <i className="fa-solid fa-xmark"></i>
                         </div>
+                        <li className={`hover:cursor-pointer text-center hover:text-rojo w-1/5 ${location.pathname == "/" ? "text-rojo" : ""}`} onClick={() => navigate("/")}>
+                            <span>Inicio</span>
+                        </li>
                         <li className={`hover:cursor-pointer text-center hover:text-rojo w-1/4 ${location.pathname == "/productos" ? "text-rojo" : ""}`} onClick={() => navigate("/productos")}>
                             <span>Productos</span>
                         </li>
