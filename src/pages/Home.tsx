@@ -18,8 +18,8 @@ export const Home = () => {
             <div className=" p-4 justify-center flex border-t border-black border-b   text-2xl sm:text-3xl w-[95%] xl:w-[80%]">
                 <span>Productos</span>
             </div>
-            <ProductsCarrousel product="pollo" color="rojo" />
-            <ProductsCarrousel product="granja" color="azul" />
+            <ProductsCarrousel product="pollo" />
+            <ProductsCarrousel product="granja" />
             <Footer />
 
         </div>
