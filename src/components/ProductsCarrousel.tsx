@@ -78,18 +78,18 @@ export const ProductsCarrousel = ({ product, color }: { product: string, color: 
 
 
             <div className={`w-full justify-center flex `} >
-                <div ref={carouselRef} className={`p-3 ${color == "rojo" ? "bg-[rgba(246,231,209,1)]" : "bg-[rgba(234,234,218,1)]"} rounded-lg gap-6 snap-x snap-mandatory  flex w-[95%] xl:w-[80%] justify-between  overflow-x-auto overflow-y-hidden    `}>
+                <div ref={carouselRef} className={`p-3 rounded-lg gap-6 snap-x snap-mandatory  flex w-[95%] xl:w-[80%] justify-between  overflow-x-auto overflow-y-hidden    `}>
                     {showProducts.map((p, i) =>
-                        <div className={`shadow-[inset_0_-20px_30px_rgba(0,0,0,0.1),inset_0_20px_30px_rgba(241,238,219,1)] 
+                        <div className={`
                              w-[75%] sm:w-[45%] md:w-[30%] lg:w-[30%] xl:w-[25%]  relative hover:shadow-lg hover:shadow-black
                               flex flex-col   shrink-0 hover:bg-white bg-blanco border border-gray-300  active:scale-95 active:bg-white
-                               active:border-gray-400  transition-all duration-200 rounded-2xl overflow-hidden gap-4 p-4`}
+                               active:border-gray-400  transition-all duration-200 rounded-xl overflow-hidden gap-4 p-4`}
                             key={i}>
                             <div className="text-center py-2  xl:text-xl lg:text-lg md:text-md">
                                 <span>{normalizer[p.nombre]}</span>
                             </div>
                             <div className=" overflow-hidden object-cover object-[center_10%] justify-center flex w-full">
-                                <img src={p.img} alt="" className="w-50 h-50 rounded-2xl" />
+                                <img src={p.img} alt="" className="w-50 h-50 rounded-xl" />
                             </div>
                             <div>
                                 <span>stock:</span>
@@ -98,14 +98,14 @@ export const ProductsCarrousel = ({ product, color }: { product: string, color: 
                             </div>
                             <div className="">
                                 <span className="text-sm">Precio x {p.venta}:  </span>
-                                <span className="p-2 bg-blue-500 text-md text-white rounded-2xl"> ${p.precio}</span>
+                                <span className="p-2 bg-blue-500 text-md text-white rounded-xl"> ${p.precio}</span>
                             </div>
-                            <div className="w-full flex justify-center p-2 border-2 active:bg-white" onClick={() => contactProduct(p.nombre)}>
+                            <div className="w-full flex justify-center p-2 border-2 active:bg-white bg-blanco rounded-xl" onClick={() => contactProduct(p.nombre)}>
                                 <button className="">Pedir</button>
                             </div>
 
                             {p.oferta !== false &&
-                                <div className="absolute top-20 left-4 bg-rojo text-white p-2 rounded-2xl animate-pulse active:animate-bounce">
+                                <div className="absolute top-20 left-4 bg-rojo text-white p-2 rounded-xl animate-pulse active:animate-bounce">
                                     <span>!Oferta!</span>
                                     <p>{p.oferta}</p>
                                 </div>
