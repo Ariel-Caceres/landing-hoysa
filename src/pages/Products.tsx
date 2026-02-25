@@ -2,13 +2,14 @@ import { useState } from "react"
 import { Banner } from "../components/Banner"
 import { NavBar } from "../components/NavBar"
 import { products } from "../data/products"
+import { useWhatsapp } from "../hooks/useWhatsapp"
 import type { Product } from "../types/product.entity"
 import { useSearchParams } from "react-router-dom"
 export const Products = () => {
     const [productCategory, setProductCategory] = useState<Product[]>(products)
     const [searchParams, setSearchParams] = useSearchParams()
     const categories = [...new Set(products.map(p => p.tipo))]
-
+    const { contactProduct } = useWhatsapp()
 
     const searchParamsCategory = (category: string) => {
         if (category == "todos") {
@@ -75,7 +76,7 @@ export const Products = () => {
                         <div className="text-sm flex-wrap sm:flex-row flex-col wrap-break-word md:gap-0 gap-2 flex  sm:items-center">
                             <span className="p-2 bg-blue-500 sm:text-md text-lg text-white rounded-2xl sm:w-auto w-[30%] min-w-24 text-center"> ${p.precio}</span>
                         </div>
-                        <div className="w-full flex justify-center p-2 border-2 active:bg-white">
+                        <div className="w-full flex justify-center p-2 border-2 active:bg-white" onClick={() => contactProduct("karina", true, p.nombre)}>
                             <button className="">Pedir</button>
                         </div>
 

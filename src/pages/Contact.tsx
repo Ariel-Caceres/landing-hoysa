@@ -1,8 +1,8 @@
 import { Banner } from "../components/Banner"
 import { NavBar } from "../components/NavBar"
-
+import { useWhatsapp } from "../hooks/useWhatsapp"
 export const Contact = () => {
-
+    const { contactProduct } = useWhatsapp()
 
 
     return (
@@ -27,13 +27,12 @@ export const Contact = () => {
                         <p className="text-gray-600"> 11-6136-5411</p>
 
                         <a
-                            href="https://wa.me/541161365411"
-                            target="_blank"
+                            onClick={() => contactProduct("maria", false)}
                             rel="noopener noreferrer"
                             className=" mt-4 inline-flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-light py-3 rounded-xl shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 " >
-                            <i className="fa-brands fa-whatsapp text-xl"></i>
+                            <i className="fa-brands fa-whatsapp text-xl"></i >
                             Escribir por WhatsApp
-                        </a>
+                        </a >
                     </div>
                 </div>
                 <div className="flex justify-center w-full sm:w-[80%] md:w-[50%] lg:w-[40%] xl:w-[30%]">
@@ -47,8 +46,7 @@ export const Contact = () => {
                         <p className="text-gray-600">11-7141-6222</p>
 
                         <a
-                            href="https://wa.me/541171416222"
-                            target="_blank"
+                            onClick={() => contactProduct("karina", false)}
                             rel="noopener noreferrer"
                             className=" mt-4 inline-flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-light py-3 rounded-xl shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 " >
                             <i className="fa-brands fa-whatsapp text-xl"></i>
