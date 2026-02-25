@@ -1,12 +1,17 @@
 
 import './App.css'
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 import { Home } from './pages/Home';
 import { Contact } from './pages/Contact';
 import { Products } from './pages/Products';
+import { useEffect } from 'react';
 
 function App() {
+    const location = useLocation();
 
+    useEffect(() => {
+        window.getSelection()?.removeAllRanges();
+    }, [location.pathname]);
 
     return (
         <div className="bg-blanco xl:h-auto min-h-screen">
