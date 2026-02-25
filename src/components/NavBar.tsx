@@ -34,18 +34,13 @@ export const NavBar = () => {
                         <li className={`hover:cursor-pointer text-center hover:text-rojo w-1/5 ${location.pathname == "/contacto" ? "text-rojo" : ""}`} onClick={() => navigate("/contacto")}>
                             <span>Contacto</span>
                         </li>
-                        {/* <li className="hover:cursor-pointer text-center hover:text-rojo min-w-36  md:block flex ">
-                            <span>Sobre Nosotros</span>
-                        </li>
-                        <li className="hover:cursor-pointer text-center hover:text-rojo w-1/4">
-                            <span>Sabores</span>
-                        </li> */}
+
 
                         <div className="block border-b border-b-gray-400">
                         </div>
                     </ul>
 
-                    <div className="text-3xl flex md:hidden cursor-pointer    transition-all ease-in-out duration-300 " onClick={() => setShowNavBar(true)}>
+                    <div className="text-3xl flex md:hidden cursor-pointer active:scale-95 active:rotate-y-180  transition-all ease-in-out duration-300 " onClick={() => setShowNavBar(true)}>
                         <i className=" fa-solid fa-bars"></i>
                     </div>
                 </div>
