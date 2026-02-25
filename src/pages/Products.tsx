@@ -32,7 +32,7 @@ export const Products = () => {
             </div>
             <div className={`mb-10 mt-4 flex justify-center gap-3 items-center w-[90%] flex-wrap `}>
                 <div className={`xl:w-[15%] lg:w-[20%] md:w-[35%] sm:w-[40%] w-[45%] p-2 text-center  rounded-xl border
-                 border-gray-400 cursor-pointer ${searchParams.get("categoria") == "todos" ? "bg-transparent shadow-sm shadow-black" : searchParams.get("categoria") == "" ? "bg-white" : "bg-white"}`} onClick={() => { searchParamsCategory("todos") }}>
+                 border-gray-400 cursor-pointer ${searchParams.get("categoria") == "todos" ? "bg-transparent shadow-sm shadow-black" : searchParams.get("categoria") == undefined ? "bg-transparent shadow-sm shadow-black" : "bg-white"}`} onClick={() => { searchParamsCategory("todos") }}>
                     <span>Todos</span>
                 </div>
 
