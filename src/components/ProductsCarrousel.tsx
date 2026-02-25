@@ -104,7 +104,7 @@ export const ProductsCarrousel = ({ product }: { product: string }) => {
                                 <span className="text-sm">Precio x {p.venta}:  </span>
                                 <span className="p-2 bg-blue-500 text-md text-white rounded-xl"> ${p.precio}</span>
                             </div>
-                            <div className="w-full flex justify-center p-2 border-2 active:bg-white bg-blanco rounded-xl" onClick={() => contactProduct(p.nombre, "karina", true)}>
+                            <div className="w-full flex justify-center p-2 border-2 active:bg-white bg-blanco rounded-xl" onClick={() => contactProduct("karina", true, p.nombre,)}>
                                 <button className="">Pedir </button>
                             </div>
 
