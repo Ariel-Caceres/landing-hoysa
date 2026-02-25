@@ -45,7 +45,7 @@ export const NavBar = () => {
                         </div>
                     </ul>
 
-                    <div className="text-3xl flex md:hidden cursor-pointer active:scale-95   transition-all ease-in-out duration-300 " onClick={() => setShowNavBar(true)}>
+                    <div className="text-3xl flex md:hidden cursor-pointer    transition-all ease-in-out duration-300 " onClick={() => setShowNavBar(true)}>
                         <i className=" fa-solid fa-bars"></i>
                     </div>
                 </div>
