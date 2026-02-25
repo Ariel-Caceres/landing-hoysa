@@ -1,9 +1,16 @@
+import { useLocation } from "react-router-dom"
 import { Banner } from "../components/Banner"
 import { Footer } from "../components/Footer"
 import { NavBar } from "../components/NavBar"
 import { ProductsCarrousel } from "../components/ProductsCarrousel"
+import { useEffect } from "react"
 
 export const Home = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.getSelection()?.removeAllRanges();
+    }, [location.pathname]);
     return (
         <div className="flex justify-center items-center flex-col">
             {/* <div className="fixed bottom-10 right-10 text-5xl z-20 ">
