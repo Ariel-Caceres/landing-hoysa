@@ -1,27 +1,24 @@
-import { useState } from "react"
 import { Banner } from "../components/Banner"
 import { NavBar } from "../components/NavBar"
 import { products } from "../data/products"
 import { useWhatsapp } from "../hooks/useWhatsapp"
-import type { Product } from "../types/product.entity"
 import { useSearchParams } from "react-router-dom"
 export const Products = () => {
-    const [productCategory, setProductCategory] = useState<Product[]>(products)
     const [searchParams, setSearchParams] = useSearchParams()
     const categories = [...new Set(products.map(p => p.tipo))]
     const { contactProduct } = useWhatsapp()
+    const categoria = searchParams.get("categoria") ?? "todos"
 
     const searchParamsCategory = (category: string) => {
-        if (category == "todos") {
-            setProductCategory(products)
-        } else {
-            const productsFilter = products.filter(p => p.tipo == category)
-            setProductCategory(productsFilter)
-        }
+
         setSearchParams({
             categoria: category
         })
     }
+
+    const filteredProducts =
+        categoria == "todos" ? products : products.filter(p => p.tipo == categoria)
+
 
 
     return (
@@ -51,7 +48,7 @@ export const Products = () => {
             </div>
 
             <div className=" flex sm:justify-center gap-0 md:gap-15 flex-wrap md:w-[80%] w-[95%] gap-y-4">
-                {productCategory.map((p, i) =>
+                {filteredProducts.map((p, i) =>
 
                     <div className={` 
                          w-[50%] sm:w-[45%] md:w-[35%] lg:w-[25%] xl:w-[20%] md:h-auto h-96 justify-between  relative hover:shadow-lg  hover:shadow-black 
