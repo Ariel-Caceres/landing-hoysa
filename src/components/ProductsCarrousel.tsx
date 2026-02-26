@@ -26,26 +26,7 @@ export const ProductsCarrousel = ({ product }: { product: string }) => {
     })
 
 
-    // const normalizer: Record<string, string> = {
-    //     "chupachups": "Chupachups",
-    //     "pollo-trozado": "Pollo Trozado",
-    //     "carne-picada": "Picada de Pollo",
-    //     "pollo-entero": "Pollo Entero",
-    //     "huevo": "Huevo",
-    //     "zanahoria": "Zanahoria",
-    //     "papa": "Papa",
-    //     "pata-y-muslo": "Pata y muslo",
-    //     "pechuga": "Pechuga",
-    //     "cebolla": "cebolla"
 
-    // }
-
-    // const contactProduct = (product: string) => {
-
-    //     const message = (`Hola, quiero pedir ${normalizer[product]}`)
-    //     const url = `https://wa.me/541171416222?text=${encodeURIComponent(message)}`;
-    //     window.open(url, "_blank")
-    // }
 
     const scrollLeft = () => {
         if (carouselRef.current) {
@@ -64,16 +45,14 @@ export const ProductsCarrousel = ({ product }: { product: string }) => {
         <div className="w-full justify-center items-center flex flex-col">
             <div className=" flex md:w-[70%]  w-[90%] justify-between py-6 items-center ">
                 <div className="text-xl sm:text-3xl w-[50%] shadow-top-sm ">
-                    <span>{product} {product == "pollo" ? "🐔" : product == "granja" ? "🥚🍅" : ""}</span>
+                    <span>{product} {product == "pollo" ? "🐔❄" : product == "granja" ? "🥚🍅" : ""}</span>
                 </div>
-                {/* <div className="border-b-2 border-gray-300 block w-full">
 
-                </div> */}
                 <div className="xl:text-5xl md:text-3xl sm:text-3xl text-3xl gap-2 flex">
-                    <button className="cursor-pointer" onClick={scrollLeft}>
+                    <button className="cursor-pointer active:scale-90" onClick={scrollLeft}>
                         <i className="fa-regular fa-circle-left"></i>
                     </button>
-                    <button className="cursor-pointer" onClick={scrollRight}>
+                    <button className="cursor-pointer active:scale-90" onClick={scrollRight}>
                         <i className="fa-regular fa-circle-right "></i>
                     </button>
                 </div>
