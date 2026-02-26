@@ -66,7 +66,7 @@ export const products: Product[] = [{
     precio: 900,
     oferta: false,
     img: "images/papa.jpg",
-    stock: "disponible",
+    stock: "agotado",
     venta: "kilo",
     tipo: "verdura"
 },
