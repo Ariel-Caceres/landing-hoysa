@@ -29,7 +29,7 @@ export const Contact = () => {
                         <a
                             onClick={() => contactProduct("maria", false)}
                             rel="noopener noreferrer"
-                            className=" mt-4 inline-flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-light py-3 rounded-xl shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 " >
+                            className="cursor-pointer mt-4 inline-flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-light py-3 rounded-xl shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 " >
                             <i className="fa-brands fa-whatsapp text-xl"></i >
                             Escribir por WhatsApp
                         </a >
@@ -48,7 +48,7 @@ export const Contact = () => {
                         <a
                             onClick={() => contactProduct("karina", false)}
                             rel="noopener noreferrer"
-                            className=" mt-4 inline-flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-light py-3 rounded-xl shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 " >
+                            className="cursor-pointer mt-4 inline-flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white font-light py-3 rounded-xl shadow-md hover:shadow-lg active:scale-95 transition-all duration-200 " >
                             <i className="fa-brands fa-whatsapp text-xl"></i>
                             Escribir por WhatsApp
                         </a>

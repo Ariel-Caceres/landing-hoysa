@@ -17,7 +17,6 @@ export const ProductsCarrousel = ({ product }: { product: string }) => {
         })
     )
 
-    console.log();
 
     showProducts.sort((a, b) => {
         const aHasOfer = Boolean(a.oferta)
