@@ -36,7 +36,7 @@ export const products: Product[] = [{
     precio: 3800,
     oferta: false,
     img: "images/Pollo-entero.jpg",
-    stock: "disponible",
+    stock: "agotado",
     venta: "kilo",
     tipo: "pollo"
 },
