@@ -16,7 +16,7 @@ export const products: Product[] = [{
     precio: 300,
     oferta: "8 x 2000",
     img: "images/chupachups.jpg",
-    stock: "Disponible",
+    stock: "disponible",
     venta: "unidad",
     tipo: "chupachups"
 },
